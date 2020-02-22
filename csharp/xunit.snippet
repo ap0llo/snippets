@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>XUnit Fact</Title>
+            <Shortcut>xfact</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[
+            [Fact]
+            public void $TestName$() 
+            {
+                // ARRANGE
+
+                // ACT 
+
+                // ASSERT
+            }
+            ]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>Xunit</Namespace>
+                </Import>
+            </Imports>   
+            <Declarations>
+                <Literal>
+                    <ID>TestName</ID>                
+                    <Default>testName</Default>
+                </Literal>
+            </Declarations>         
+        </Snippet>
+    </CodeSnippet>
+
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>XUnit async Fact</Title>
+            <Shortcut>xfactasync</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[
+            [Fact]
+            public async Task $TestName$() 
+            {
+                // ARRANGE
+
+                // ACT 
+
+                // ASSERT
+            }
+            ]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>Xunit</Namespace>                    
+                </Import>
+                <Import>
+                    <Namespace>System.Threading.Tasks</Namespace>
+                </Import>                
+            </Imports>   
+            <Declarations>
+                <Literal>
+                    <ID>TestName</ID>                
+                    <Default>testName</Default>
+                </Literal>
+            </Declarations>         
+        </Snippet>
+    </CodeSnippet>
+
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>XUnit Theory</Title>
+            <Shortcut>xtheory</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[
+            [Theory]
+            public void $TestName$($ParamType$ $ParamName$) 
+            {
+                // ARRANGE
+
+                // ACT 
+
+                // ASSERT
+            }
+            ]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>Xunit</Namespace>
+                </Import>
+            </Imports>   
+            <Declarations>
+                <Literal>
+                    <ID>TestName</ID>                
+                    <Default>testName</Default>
+                </Literal>
+                <Literal>
+                    <ID>ParamType</ID>                
+                    <Default>string</Default>
+                </Literal>
+                <Literal>
+                    <ID>ParamName</ID>                
+                    <Default>parameter</Default>
+                </Literal>                                
+            </Declarations>         
+        </Snippet>
+    </CodeSnippet>
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>XUnit async Theory</Title>
+            <Shortcut>xtheoryasync</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[
+            [Theory]
+            public async Task $TestName$($ParamType$ $ParamName$) 
+            {
+                // ARRANGE
+
+                // ACT 
+
+                // ASSERT
+            }
+            ]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>Xunit</Namespace>                    
+                </Import>
+                <Import>
+                    <Namespace>System.Threading.Tasks</Namespace>
+                </Import>
+            </Imports>   
+            <Declarations>
+                <Literal>
+                    <ID>TestName</ID>                
+                    <Default>testName</Default>
+                </Literal>
+                <Literal>
+                    <ID>ParamType</ID>                
+                    <Default>string</Default>
+                </Literal>
+                <Literal>
+                    <ID>ParamName</ID>                
+                    <Default>parameter</Default>
+                </Literal>                                
+            </Declarations>         
+        </Snippet>
+    </CodeSnippet>    
+
+</CodeSnippets>

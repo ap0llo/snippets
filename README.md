@@ -1,2 +1,3 @@
 # snippets
-Collection of Visual Studio Code snippets
+
+A collection of Visual Studio snippets

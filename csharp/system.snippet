@@ -18,4 +18,32 @@
         </Snippet>
     </CodeSnippet>
     
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Ensure variable is not null or whitespace</Title>
+            <Shortcut>notnullorwhitespace</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[
+            if (String.IsNullOrWhiteSpace($VariableName$))
+                throw new ArgumentException("Value must not be null or whitespace", nameof($VariableName$));
+            ]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>System</Namespace>
+                </Import>
+            </Imports>            
+            <Declarations>
+                <Literal>
+                    <ID>VariableName</ID>                
+                    <Default>variableName</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+
 </CodeSnippets>
+
+
+

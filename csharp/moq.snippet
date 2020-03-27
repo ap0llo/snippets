@@ -23,5 +23,28 @@
             </Declarations>                              
         </Snippet>
     </CodeSnippet>
+
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Moq Mock</Title>
+            <Shortcut>mock</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[new Mock<$TYPE$>(MockBehavior.Strict)]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>Moq</Namespace>
+                </Import>
+            </Imports>   
+            <Declarations>
+                <Literal>
+                    <ID>TYPE</ID>                
+                    <Default>object</Default>
+                </Literal>                      
+            </Declarations>                              
+        </Snippet>
+    </CodeSnippet>
     
 </CodeSnippets>

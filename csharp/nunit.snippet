@@ -33,4 +33,39 @@
         </Snippet>
     </CodeSnippet>
 
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>NUnit async Test Case</Title>
+            <Shortcut>nunittestasync</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[
+            [Test]
+            public async Task $TestName$() 
+            {
+                // ARRANGE
+
+                // ACT 
+
+                // ASSERT
+            }
+            ]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>NUnit.Framework</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>System.Threading.Tasks</Namespace>
+                </Import>      
+            </Imports>   
+            <Declarations>
+                <Literal>
+                    <ID>TestName</ID>                
+                    <Default>testName</Default>
+                </Literal>
+            </Declarations>         
+        </Snippet>
+    </CodeSnippet>
+
 </CodeSnippets>

@@ -14,10 +14,10 @@
                 <Import>
                     <Namespace>System</Namespace>
                 </Import>
-            </Imports>            
+            </Imports>
         </Snippet>
     </CodeSnippet>
-    
+
     <CodeSnippet Format="1.0.0">
         <Header>
             <Title>Ensure variable is not null or whitespace</Title>
@@ -33,15 +33,37 @@
                 <Import>
                     <Namespace>System</Namespace>
                 </Import>
-            </Imports>            
+            </Imports>
             <Declarations>
                 <Literal>
-                    <ID>VariableName</ID>                
+                    <ID>VariableName</ID>
                     <Default>variableName</Default>
                 </Literal>
             </Declarations>
         </Snippet>
     </CodeSnippet>
+
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Add [NotNullWhen] attribute</Title>
+            <Shortcut>notnullwhen</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">[NotNullWhen($Value$)]</Code>
+            <Imports>
+                <Import>
+                    <Namespace>System.Diagnostics.CodeAnalysis</Namespace>
+                </Import>
+            </Imports>
+            <Declarations>
+                <Literal>
+                    <ID>Value</ID>
+                    <Default>value</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+
 
 </CodeSnippets>
 
